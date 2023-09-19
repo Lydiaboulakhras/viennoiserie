@@ -1,0 +1,432 @@
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  height: 100px;
+  width: 100vw;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  color: black;
+  box-shadow: -2px 1px 38px -14px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 38px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 38px -14px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+ul a:hover {
+  color: #ad9871;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  font-size: 29px;
+}
+.lien a {
+  color: black;
+}
+nav img {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+.trait {
+  height: 2px;
+  width: 500px;
+  background-color: white;
+}
+
+.titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  top: 220px;
+  width: 100vw;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+.titre h3 {
+  font-size: 100px;
+}
+.titre p {
+  font-size: 28px;
+}
+
+.one {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+.left {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+  padding: 35px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  margin: 0%;
+}
+.left p {
+  line-height: 2;
+}
+.one img {
+  position: absolute;
+  right: 10px;
+  object-fit: cover;
+  height: 350px;
+  width: 50%;
+  margin: 0%;
+}
+.main {
+  background-color: black;
+}
+
+.left h3 {
+  font-size: 43px;
+}
+.gamme {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 320px);
+  grid-template-rows: repeat(1, 360px);
+  margin-top: 100px;
+}
+.gamme img {
+  object-fit: cover;
+  height: 310px;
+  width: 300px;
+  position: absolute;
+}
+
+.gtext {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.pic {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 30px;
+}
+
+.pic h3 {
+  color: #e6ab48;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+.pic p {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+.gamme img:hover {
+  display: none;
+  cursor: pointer;
+}
+
+.traitg {
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  bottom: 20px;
+  background-color: #e6ab48;
+}
+
+.pic a {
+  position: absolute;
+  bottom: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.propos {
+  height: 340px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(1, 340px);
+}
+
+.pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 300px;
+  width: 280px;
+  gap: 40px;
+}
+
+.rond {
+  border-radius: 35px;
+  background-color: #e6ab48;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  width: 100px;
+}
+.tous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 60px;
+}
+
+.pro p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.pro h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+.same {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rond i {
+  font-size: 40px;
+}
+
+.seller {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  background-color: white;
+}
+
+.best {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(1, 460px);
+  gap: 26px;
+}
+
+.voir:hover {
+  background-color: #e9b253;
+  cursor: pointer;
+}
+
+.besty {
+  background-color: white;
+  border-style: solid;
+  border-color: #e6ab48;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.seller h3 {
+  color: black;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.besty img {
+  object-fit: cover;
+  position: absolute;
+  height: 50%;
+  width: 270px;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+.besty img:hover {
+  transform: scale(0.8);
+}
+
+.second {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  left: 40px;
+  gap: 20px;
+}
+.info {
+  display: flex;
+  gap: 5px;
+}
+
+.voir {
+  height: 50px;
+  width: 200px;
+  background-color: #e6ab48;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30px;
+}
+
+.besty i {
+  color: #e6ab48;
+}
+
+.besty h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+}
+.besty p {
+  color: #62676c;
+}
+
+footer img {
+  position: absolute;
+  left: 150px;
+  top: 10px;
+  height: 280px;
+  width: 240px;
+  object-fit: cover;
+}
+.right {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  gap: 140px;
+  top: 50px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cordonees {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.minitrait {
+  height: 2px;
+  width: 280px;
+  background-color: white;
+}
+
+footer {
+  padding-right: 100px;
+  position: relative;
+  height: 400px;
+  width: 100vw;
+}
+
+footer p {
+  display: flex;
+  gap: 10px;
+}
+
+.suite {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10px;
+}
+.suite a {
+  color: #8e8d8d;
+}
+
+.suite a {
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+footer i:hover {
+  color: #e6ab48;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  height: 160px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  display: block;
+  background-color: #efebe3;
+  padding-left: 10px;
+  color: black;
+}
+
+.dropdown-content {
+  z-index: 10;
+  color: black;
+  display: none;
+  grid-template-rows: repeat(3, 40px);
+  grid-template-columns: repeat(1, 200px);
+  position: absolute;
+}
+
+.lien {
+  height: 40px;
+  width: 200px;
+}
+
+.dropdown i {
+  font-size: 16px;
+}
